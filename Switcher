@@ -1,0 +1,177 @@
+// Escolher Lutador
+package telas;
+
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import java.awt.Color;
+import java.awt.Toolkit;
+import javax.swing.JButton;
+import javax.swing.JLabel;
+import java.awt.Font;
+import javax.swing.ImageIcon;
+
+public class Switcher {
+
+	public JFrame frame;
+
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					Switcher window = new Switcher();
+					window.frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	public Switcher() {
+		initialize();
+	}
+
+	public void initialize() {
+		frame = new JFrame();
+		frame.setSize(998, 521);
+		frame.setVisible(true);
+		frame.setIconImage(Toolkit.getDefaultToolkit().getImage("C:\\Users\\Usuario\\Desktop\\Dev Games\\Scorpion Stinger.png"));
+		frame.getContentPane().setBackground(new Color(0, 0, 0));
+		frame.getContentPane().setLayout(null);
+		
+		JButton btnNewButton = new JButton("");
+		btnNewButton.setBackground(new Color(0, 0, 0));
+		btnNewButton.setBounds(539, 206, 89, 89);
+		frame.getContentPane().add(btnNewButton);
+		
+		JButton Anderson = new JButton("");
+		Anderson.setIcon(new ImageIcon("C:\\Users\\Usuario\\Desktop\\Personagem.png"));
+		Anderson.setBackground(Color.BLACK);
+		Anderson.setBounds(539, 74, 89, 89);
+		frame.getContentPane().add(Anderson);
+		
+		JButton Jose = new JButton("");
+		Jose.setIcon(new ImageIcon("C:\\Users\\Usuario\\Desktop\\Jose aldo.jpg"));
+		Jose.setFont(new Font("Arial Black", Font.BOLD, 11));
+		Jose.setForeground(new Color(255, 255, 255));
+		Jose.setBackground(Color.BLACK);
+		Jose.setBounds(689, 74, 89, 89);
+		frame.getContentPane().add(Jose);
+		
+		JButton YiLong = new JButton("");
+		YiLong.setIcon(new ImageIcon("C:\\Users\\Usuario\\Desktop\\Shi xie.png"));
+		YiLong.setBackground(Color.BLACK);
+		YiLong.setBounds(827, 74, 89, 89);
+		frame.getContentPane().add(YiLong);
+		
+		JButton Rambo = new JButton("");
+		Rambo.setIcon(new ImageIcon("C:\\Users\\Usuario\\Desktop\\John Eagle.jpg"));
+		Rambo.setBackground(Color.BLACK);
+		Rambo.setBounds(362, 74, 89, 89);
+		frame.getContentPane().add(Rambo);
+		
+		JButton btnNewButton_5 = new JButton("");
+		btnNewButton_5.setBackground(Color.BLACK);
+		btnNewButton_5.setBounds(362, 206, 89, 89);
+		frame.getContentPane().add(btnNewButton_5);
+		
+		JButton btnNewButton_6 = new JButton("");
+		btnNewButton_6.setBackground(Color.BLACK);
+		btnNewButton_6.setBounds(689, 206, 89, 89);
+		frame.getContentPane().add(btnNewButton_6);
+		
+		JButton btnNewButton_7 = new JButton("");
+		btnNewButton_7.setBackground(Color.BLACK);
+		btnNewButton_7.setBounds(827, 206, 89, 89);
+		frame.getContentPane().add(btnNewButton_7);
+		
+		JButton miketyson = new JButton("");
+		miketyson.setIcon(new ImageIcon("C:\\Users\\Usuario\\Desktop\\Maiku toguchi.jpeg"));
+		miketyson.setBackground(Color.BLACK);
+		miketyson.setBounds(221, 74, 89, 89);
+		frame.getContentPane().add(miketyson);
+		
+		JButton BruceLee = new JButton("");
+		BruceLee.setIcon(new ImageIcon("C:\\Users\\Usuario\\Desktop\\bruce Lee.jpg"));
+		BruceLee.setBackground(Color.BLACK);
+		BruceLee.setBounds(221, 206, 89, 89);
+		frame.getContentPane().add(BruceLee);
+		
+		JLabel lblNewLabel = new JLabel("Maiku Toguchi");
+		lblNewLabel.setFont(new Font("Arial Black", Font.PLAIN, 11));
+		lblNewLabel.setForeground(new Color(255, 255, 255));
+		lblNewLabel.setBackground(new Color(0, 0, 0));
+		lblNewLabel.setBounds(221, 167, 115, 28);
+		frame.getContentPane().add(lblNewLabel);
+		
+		JLabel lblNewLabel_1 = new JLabel("John Eagle");
+		lblNewLabel_1.setFont(new Font("Arial Black", Font.BOLD, 11));
+		lblNewLabel_1.setBackground(new Color(0, 0, 0));
+		lblNewLabel_1.setForeground(new Color(255, 255, 255));
+		lblNewLabel_1.setBounds(372, 167, 115, 28);
+		frame.getContentPane().add(lblNewLabel_1);
+		
+		JLabel lblNewLabel_1_1 = new JLabel("Anderuson Shiruba");
+		lblNewLabel_1_1.setForeground(new Color(255, 255, 255));
+		lblNewLabel_1_1.setBackground(new Color(0, 0, 0));
+		lblNewLabel_1_1.setFont(new Font("Arial Black", Font.BOLD, 11));
+		lblNewLabel_1_1.setBounds(527, 167, 128, 28);
+		frame.getContentPane().add(lblNewLabel_1_1);
+		
+		JLabel lblNewLabel_1_1_1 = new JLabel("Bāxī lóng");
+		lblNewLabel_1_1_1.setForeground(new Color(255, 255, 255));
+		lblNewLabel_1_1_1.setFont(new Font("Arial Black", Font.BOLD, 11));
+		lblNewLabel_1_1_1.setBounds(705, 167, 128, 28);
+		frame.getContentPane().add(lblNewLabel_1_1_1);
+		
+		JLabel lblNewLabel_1_1_2 = new JLabel("Shi xie");
+		lblNewLabel_1_1_2.setBackground(new Color(0, 0, 0));
+		lblNewLabel_1_1_2.setFont(new Font("Arial Black", Font.ITALIC, 11));
+		lblNewLabel_1_1_2.setForeground(new Color(255, 255, 255));
+		lblNewLabel_1_1_2.setBounds(854, 104, 128, 28);
+		frame.getContentPane().add(lblNewLabel_1_1_2);
+		
+		JLabel lblNewLabel_1_1_4 = new JLabel("");
+		lblNewLabel_1_1_4.setBounds(372, 306, 128, 53);
+		frame.getContentPane().add(lblNewLabel_1_1_4);
+		
+		JLabel lblNewLabel_1_1_5 = new JLabel("");
+		lblNewLabel_1_1_5.setBounds(527, 320, 128, 53);
+		frame.getContentPane().add(lblNewLabel_1_1_5);
+		
+		JLabel lblNewLabel_1_1_6 = new JLabel("");
+		lblNewLabel_1_1_6.setBounds(689, 320, 144, 53);
+		frame.getContentPane().add(lblNewLabel_1_1_6);
+		
+		JLabel lblNewLabel_1_1_7 = new JLabel("");
+		lblNewLabel_1_1_7.setBounds(703, 320, 128, 28);
+		frame.getContentPane().add(lblNewLabel_1_1_7);
+		
+		JLabel lblNewLabel_2 = new JLabel("Xiēzi quán");
+		lblNewLabel_2.setFont(new Font("Arial Black", Font.BOLD, 11));
+		lblNewLabel_2.setBackground(new Color(0, 0, 0));
+		lblNewLabel_2.setForeground(new Color(255, 255, 255));
+		lblNewLabel_2.setBounds(231, 295, 97, 53);
+		frame.getContentPane().add(lblNewLabel_2);
+		
+		JLabel lblNewLabel_3 = new JLabel("");
+		lblNewLabel_3.setBounds(827, 306, 102, 67);
+		frame.getContentPane().add(lblNewLabel_3);
+		
+		JLabel lblNewLabel_4 = new JLabel("Escolha um Lutador");
+		lblNewLabel_4.setFont(new Font("Arial Black", Font.BOLD, 16));
+		lblNewLabel_4.setBackground(new Color(0, 0, 0));
+		lblNewLabel_4.setForeground(new Color(255, 0, 0));
+		lblNewLabel_4.setBounds(490, 20, 356, 43);
+		frame.getContentPane().add(lblNewLabel_4);
+		frame.setBackground(new Color(0, 0, 0));
+		frame.setBounds(100, 100, 955, 521);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+	}
+ 
+	public void escolher() {
+		new Switcher();
+	}
+}
