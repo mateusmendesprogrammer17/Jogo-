@@ -1,0 +1,90 @@
+package telas;
+
+import java.awt.EventQueue;
+
+
+import javax.swing.JFrame;
+import java.awt.Color;
+import javax.swing.JLabel;
+import java.awt.Font;
+import javax.swing.ImageIcon;
+import javax.swing.JButton;
+import java.awt.Toolkit;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+
+public class Telainicial {
+
+	public JFrame frame;
+        Switcher sw = new Switcher();
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					Telainicial window = new Telainicial();
+					window.frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the application.
+	 */
+	public Telainicial() {
+		initialize();
+	}
+
+	/**
+	 * Initialize the contents of the frame.
+	 */
+            public void initialize() {
+		frame = new JFrame();
+		frame.setVisible(true);
+		frame.setSize(1366, 0);
+		frame.setIconImage(Toolkit.getDefaultToolkit().getImage("C:\\Users\\Usuario\\Desktop\\Dev Games\\Scorpion Stinger.png"));
+		frame.getContentPane().setBackground(new Color(0, 0, 0));
+		frame.getContentPane().setLayout(null);
+		
+		JLabel lblNewLabel = new JLabel("Scorpion Stinger");
+		lblNewLabel.setFont(new Font("Arial Black", Font.BOLD, 36));
+		lblNewLabel.setForeground(new Color(255, 0, 0));
+		lblNewLabel.setBackground(new Color(0, 0, 0));
+		lblNewLabel.setBounds(545, 11, 473, 67);
+		frame.getContentPane().add(lblNewLabel);
+		
+		JLabel lblNewLabel_1 = new JLabel("");
+		lblNewLabel_1.setIcon(new ImageIcon("C:\\Users\\Usuario\\Desktop\\Dev Games\\Scorpion Stinger.png"));
+		lblNewLabel_1.setBounds(671, 11, 938, 479);
+		frame.getContentPane().add(lblNewLabel_1);
+		
+		JButton btnNewButton = new JButton("Start");
+		btnNewButton.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				sw.escolher();
+			
+			}
+		});
+		btnNewButton.setFont(new Font("Arial Black", Font.BOLD, 16));
+		btnNewButton.setBackground(new Color(0, 0, 0));
+		btnNewButton.setForeground(new Color(255, 0, 0));
+		btnNewButton.setBounds(625, 352, 193, 59);
+		frame.getContentPane().add(btnNewButton);
+		
+		JButton btnOptions = new JButton("Options");
+		btnOptions.setForeground(new Color(255, 0, 0));
+		btnOptions.setFont(new Font("Arial Black", Font.BOLD, 16));
+		btnOptions.setBackground(Color.BLACK);
+		btnOptions.setBounds(625, 423, 193, 51);
+		frame.getContentPane().add(btnOptions);
+		frame.setBounds(100, 100, 955, 513);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	}
+
+}
